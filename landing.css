@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+#start-btn {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    text-decoration: none;
+    /* In case it's an anchor */
+    display: inline-block;
+}
+
+#start-btn:active {
+    transform: scale(0.95);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 25px;
+    /* Static styles for landing page */
+}
+
+/* Colors based on screenshot */
+#one {
+    background-color: #ff4081;
+    /* Pink/Red */
+}
+
+#two {
+    background-color: #00bcd4;
+    /* Cyan */
+}
+
+#three {
+    background-color: #ff6d00;
+    /* Orange */
+}
+
+#four {
+    background-color: #d500f9;
+    /* Purple */
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

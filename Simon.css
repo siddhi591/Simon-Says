@@ -1,0 +1,72 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-size: 3.5rem;
+    /* Increased size */
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5rem;
+    /* Increased size */
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.center {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: fit-content;
+    /* Adjust container to fit content */
+    margin: 0 auto;
+}
+
+.box {
+    width: 150px;
+    /* Reduced size */
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Updated Colors to match Landing Page */
+#one {
+    background-color: #ff4081;
+    /* Pink/Red */
+}
+
+#two {
+    background-color: #00bcd4;
+    /* Cyan */
+}
+
+#three {
+    background-color: #ff6d00;
+    /* Orange */
+}
+
+#four {
+    background-color: #d500f9;
+    /* Purple */
+}
+
+/* Flash classes */
+.white {
+    background-color: white !important;
+}
+
+.red {
+    background-color: crimson;
+}
